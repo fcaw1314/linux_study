@@ -14,20 +14,20 @@ int main()
       sleep(1);
     }
   }
-  else if(ret > 0)
+  else 
   {
     while(1)
     {
       printf("我是一个父进程，我的pid是：%d,我的父进程是：%d\n",getpid(),getppid());
-      sleep(2);
+      sleep(1);
     }
   }
-  else
-  {}
-//  while(1)
-//  {
+
+ // while(1)
+ // {
 //    printf("hello process, 我已经是一个进程了，我都pid是: %d ,我的父进程是: %d\n",getpid(),getppid());
-//    sleep(1); 
-//  }
+  // printf("我是一个进程\n");
+   // sleep(1); 
+ // }
   return 0;
 }
